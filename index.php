@@ -26,6 +26,7 @@
     		<img src="images/ribbon-800.png"/>
     	</div>
 <div class="overlay"></div>
+<div class="reveal-modal-bg" style="display: block"></div>
 <?php foreach($people as $key => $person): ?>
 <div id="modal_<?php echo $key?>" class="reveal-modal [expand, xlarge, large, medium, small]">
 	<div style="width: 300px; float: left">
@@ -120,6 +121,7 @@
 
 			$("#anniversary_banner").bind("mouseover", function(){
 				$(this).addClass("hide")
+				$(".reveal-modal-bg").css("display", "none")
 			})
 		
 		</script>
