@@ -115,3 +115,23 @@ body { background: black;}
 .responsive-grid-loading:before{
 	display: none;
 }
+
+#anniversary_banner{
+	width: 80%;
+	margin-left: 10%;
+	height: 100px;
+	position: absolute;
+	top: 200px;
+	z-index: 1000;
+	-webkit-transition: top 1s;
+	-moz-transition: top 1s;
+	text-align: center;
+}
+
+#anniversary_banner img{
+	width: 100%;
+}
+
+#anniversary_banner.hide{
+	top: -300px;
+}

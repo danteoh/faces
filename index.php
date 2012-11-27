@@ -9,7 +9,7 @@
         <link rel="shortcut icon" href="../favicon.ico"> 
 
 		<!--Styles-->
-        <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
 		<link rel="stylesheet" href="css/reveal.css">
 		
@@ -17,22 +17,14 @@
 		<script type="text/javascript" src="js/modernizr.custom.26887.js"></script> 
 
 		<!--Initialize Avgrund -->
-		<script>
-		function openDialog() {
-		Avgrund.show( "#default-popup" );
-		}
 
-		function openJames() {
-		Avgrund.show( "#james-popup" );
-		}
-		function closeDialog() {
-		Avgrund.hide();
-		}
-		</script>
 
 
     </head>
     <body>
+    	<div id="anniversary_banner">
+    		<img src="images/ribbon-800.png"/>
+    	</div>
 <div class="overlay"></div>
 <?php foreach($people as $key => $person): ?>
 <div id="modal_<?php echo $key?>" class="reveal-modal [expand, xlarge, large, medium, small]">
@@ -124,6 +116,12 @@
 				} );
 			
 			});
+
+
+			$("#anniversary_banner").bind("mouseover", function(){
+				$(this).addClass("hide")
+			})
+		
 		</script>
     </body>
 </html>
