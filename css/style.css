@@ -1,4 +1,4 @@
-body { background: black;}
+body { background: white;}
 
 .responsive-grid{
 	margin: 30px auto 30px;
@@ -34,14 +34,14 @@ body { background: black;}
 
 .responsive-grid ul {
     zoom: 1; /* For IE 6/7 (trigger hasLayout) */
-} 
+}
 
 .responsive-grid ul li {
 	-webkit-perspective: 400px;
 	-moz-perspective: 400px;
 	-o-perspective: 400px;
 	-ms-perspective: 400px;
-	perspective: 400px;	
+	perspective: 400px;
 	margin: 0;
 	padding: 0;
 	float: left;
@@ -117,11 +117,11 @@ body { background: black;}
 }
 
 #anniversary_banner{
-	width: 80%;
-	margin-left: 10%;
+	width: 50%;
+	margin-left: 25%;
 	height: 100px;
-	position: absolute;
-	top: 200px;
+	position: fixed;
+	top: 5px;
 	z-index: 1000;
 	-webkit-transition: top 1s;
 	-moz-transition: top 1s;
@@ -130,8 +130,4 @@ body { background: black;}
 
 #anniversary_banner img{
 	width: 100%;
-}
-
-#anniversary_banner.hide{
-	top: -300px;
 }

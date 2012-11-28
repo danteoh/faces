@@ -308,12 +308,12 @@ $person["image"]= "pmqc";
 $people[] = $person;
 
 //Nulogy N
-$person["name"] = "";
-$person["team"] = "";
-$person["favourite"] = "";
-$person["future"] = "";
-$person["image"]= "nulogy_n";
-$people[] = $person;
+// $person["name"] = "";
+// $person["team"] = "";
+// $person["favourite"] = "";
+// $person["future"] = "";
+// $person["image"]= "nulogy_n";
+// $people[] = $person;
 
 
 shuffle($people);
