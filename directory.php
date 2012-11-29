@@ -86,8 +86,8 @@ $people[] = $person;
 //Scott Johnson
 $person["name"] = "Scott Johnson";
 $person["team"] = "Professional Services";
-$person["favourite"] = "";
-$person["future"] = "";
+$person["favourite"] = "The thought of walking into an office with like-minded people who share the same passion and intelligence for whatever problem comes next.";
+$person["future"] = "How quickly Nulogy will evolve into a larger organization. This will bring new challenges and opportunities that everyone will share.";
 $person["image"]= "scottj";
 $people[] = $person;
 
