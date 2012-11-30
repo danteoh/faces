@@ -116,6 +116,26 @@
           },
         } );
 
+        var ie = (function(){
+
+            var undef,
+                v = 3,
+                div = document.createElement('div'),
+                all = div.getElementsByTagName('i');
+
+            while (
+                div.innerHTML = '<!--[if gt IE ' + (++v) + ']><i></i><![endif]-->',
+                all[0]
+            );
+
+            return v > 4 ? v : undef;
+
+        }());
+
+        if(ie < 9){
+          alert("This team page requires the use of a modern browser.  Please use a recent version of Chrome, Safari, Firefox, or Internet Explorer (9+)")
+        }
+
       });
 
     </script>
